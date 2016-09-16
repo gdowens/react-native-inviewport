@@ -1,9 +1,9 @@
 'use strict';
 
-var React = require('react');
-var ReactNative = require('react-native');
-var window = ReactNative.Dimensions.get('window');
-var {View, NativeMethodsMixin} = ReactNative;
+import React, { Component } from 'react';
+import { AppRegistry, Text, Dimensions, View } from 'react-native';
+const NativeMethodsMixin = require('react/lib/NativeMethodsMixin');
+let window = Dimensions.get('window');
 
 module.exports = React.createClass({
   displayName: 'InViewPort',
