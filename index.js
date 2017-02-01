@@ -1,12 +1,11 @@
 'use strict';
 
 import React, { Component } from 'react';
-import { AppRegistry, NativeMethodsMixin, Text, Dimensions, View } from 'react-native';
+import { AppRegistry, Text, Dimensions, View } from 'react-native';
 let window = Dimensions.get('window');
 
 module.exports = React.createClass({
   displayName: 'InViewPort',
-  mixins: [NativeMethodsMixin],
   propTypes: {
     onChange: React.PropTypes.func.isRequired,
     active: React.PropTypes.bool,
@@ -79,7 +78,7 @@ module.exports = React.createClass({
 
   render: function () {
     return (
-      <View ref='myview' {...this.props}>
+      <View ref={"myview"} {...this.props}>
         {this.props.children}
       </View>
     );
