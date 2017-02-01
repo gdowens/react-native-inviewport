@@ -1,8 +1,7 @@
 'use strict';
 
 import React, { Component } from 'react';
-import { AppRegistry, Text, Dimensions, View } from 'react-native';
-const NativeMethodsMixin = require('react/lib/NativeMethodsMixin');
+import { AppRegistry, NativeMethodsMixin, Text, Dimensions, View } from 'react-native';
 let window = Dimensions.get('window');
 
 module.exports = React.createClass({
